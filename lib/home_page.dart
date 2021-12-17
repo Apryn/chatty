@@ -58,11 +58,13 @@ class Home_page extends StatelessWidget {
                         style: titletextstyle,
                       ),
                       Chat_tile(
+                        
                         Imageurl: 'assets/images/pic(1).png',
                         Name: 'Joshuer',
                         text: 'Sorry, you’re not my ty...',
                         Date: 'Now',
                         Unread: true,
+                        
                       ),
                       Chat_tile(
                         Imageurl: 'assets/images/pic(2).png',
