@@ -8,11 +8,13 @@ Color lightwhite_color = Color(0xffF8FAFC);
 
 TextStyle titletextstyle = TextStyle(
   fontFamily: 'Poppins',
-  fontSize: 16,
+  fontSize: 12,
   fontWeight: FontWeight.w500,
 );
 
 TextStyle titlesubtextstyle = TextStyle(
   fontFamily: 'Poppins',
+  color: dark_greycolor,
+  fontSize: 10,
   fontWeight: FontWeight.w300,
 );
