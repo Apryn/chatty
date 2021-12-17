@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'theme.dart';
 
-class home_page extends StatelessWidget {
+class Home_page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
