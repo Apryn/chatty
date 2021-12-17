@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'theme.dart';
+import 'Chat_tile.dart';
 
 class Home_page extends StatelessWidget {
   @override
@@ -55,6 +56,48 @@ class Home_page extends StatelessWidget {
                       Text(
                         'Friends',
                         style: titletextstyle,
+                      ),
+                      Chat_tile(
+                        Imageurl: 'assets/images/pic(1).png',
+                        Name: 'Joshuer',
+                        text: 'Sorry, you’re not my ty...',
+                        Date: 'Now',
+                        Unread: true,
+                      ),
+                      Chat_tile(
+                        Imageurl: 'assets/images/pic(2).png',
+                        Name: 'Gabriela',
+                        text: 'I saw it clearly and mig...',
+                        Date: '11:11',
+                        Unread: false,
+                      ),
+                      SizedBox(
+                        height: 30,
+                      ),
+                      Text(
+                        'Group',
+                        style: titletextstyle,
+                      ),
+                      Chat_tile(
+                        Imageurl: 'assets/images/icon1.png',
+                        Name: 'Jakarta Fair',
+                        text: 'Why does everyone ca...',
+                        Date: '07:11',
+                        Unread: false,
+                      ),
+                      Chat_tile(
+                        Imageurl: 'assets/images/icon2.png',
+                        Name: 'Angga',
+                        text: 'Here here we can go...',
+                        Date: '11:11',
+                        Unread: false,
+                      ),
+                      Chat_tile(
+                        Imageurl: 'assets/images/icon3.png',
+                        Name: 'Bentley',
+                        text: 'The car which does not...',
+                        Date: '11:11',
+                        Unread: false ,
                       ),
                     ],
                   ),
