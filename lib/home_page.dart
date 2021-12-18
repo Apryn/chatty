@@ -7,9 +7,9 @@ class Home_page extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: bluecolor,
-      body: ListView(
-        children: [
-          Center(
+      body: SafeArea(
+        child: Center(
+          child: SingleChildScrollView(
             child: Column(
               children: [
                 SizedBox(
@@ -58,13 +58,11 @@ class Home_page extends StatelessWidget {
                         style: titletextstyle,
                       ),
                       Chat_tile(
-                        
                         Imageurl: 'assets/images/pic(1).png',
                         Name: 'Joshuer',
                         text: 'Sorry, you’re not my ty...',
                         Date: 'Now',
                         Unread: true,
-                        
                       ),
                       Chat_tile(
                         Imageurl: 'assets/images/pic(2).png',
@@ -88,18 +86,17 @@ class Home_page extends StatelessWidget {
                         Unread: false,
                       ),
                       Chat_tile(
-                        Imageurl: 'assets/images/icon2.png',
-                        Name: 'Angga',
-                        text: 'Here here we can go...',
-                        Date: '11:11',
-                        Unread: false,
-                      ),
+                          Imageurl: 'assets/images/icon2.png',
+                          Name: 'Angga',
+                          text: 'Here here we can go...',
+                          Date: '11:11',
+                          Unread: true),
                       Chat_tile(
                         Imageurl: 'assets/images/icon3.png',
                         Name: 'Bentley',
                         text: 'The car which does not...',
                         Date: '11:11',
-                        Unread: false ,
+                        Unread: false,
                       ),
                     ],
                   ),
@@ -107,7 +104,7 @@ class Home_page extends StatelessWidget {
               ],
             ),
           ),
-        ],
+        ),
       ),
     );
   }

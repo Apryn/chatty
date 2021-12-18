@@ -4,7 +4,7 @@ import 'package:chatty/theme.dart';
 class Chat_tile extends StatelessWidget {
   String? Imageurl;
   String? Name;
- final String? text;
+  String? text;
   String? Date;
   bool? Unread;
 
@@ -31,17 +31,17 @@ class Chat_tile extends StatelessWidget {
                 Name!,
                 style: titletextstyle,
               ),
-              Text(
-                text!,
-                style: titlesubtextstyle,
-              ),
+              Text(text!,
+                  style: Unread!
+                      ? titlesubtextstyle.copyWith(color: Colors.black)
+                      : titlesubtextstyle),
             ],
           ),
           Spacer(),
-          Text(
-            Date!,
-            style: titlesubtextstyle,
-          )
+          Text(Date!,
+              style: Unread!
+                  ? titlesubtextstyle.copyWith(color: Colors.black)
+                  : titlesubtextstyle),
         ],
       ),
     );
