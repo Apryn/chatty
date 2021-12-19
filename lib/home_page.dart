@@ -7,6 +7,14 @@ class Home_page extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: bluecolor,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Colors.green,
+        child: Icon(
+          Icons.add,
+        ),
+      ),
+      // floatingActionButtonLocation: FloatingActionButtonLocation.miniEndDocked,
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
