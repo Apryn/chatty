@@ -14,7 +14,6 @@ class Home_page extends StatelessWidget {
           Icons.add,
         ),
       ),
-      // floatingActionButtonLocation: FloatingActionButtonLocation.miniEndDocked,
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
