@@ -42,8 +42,6 @@ class Message_page extends StatelessWidget {
                   Spacer(),
                   Image.asset(
                     "assets/images/btn.png",
-                    width: 55,
-                    height: 5,
                   )
                 ],
               ),
