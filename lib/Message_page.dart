@@ -10,34 +10,38 @@ class Message_page extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              width: 375,
+              width: double.infinity,
               height: 115,
+              padding: EdgeInsets.all(30),
               decoration: BoxDecoration(
                   color: whitecolor,
                   borderRadius:
                       BorderRadius.vertical(bottom: Radius.circular(50))),
-              padding: EdgeInsets.all(30),
               child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Image.asset('assets/images/icon1.png'),
+                  Image.asset(
+                    'assets/images/icon1.png',
+                    width: 55,
+                  ),
                   SizedBox(
                     width: 12,
                   ),
-                  Padding(
-                    padding: EdgeInsets.only(top: 8.0),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Jakarta Fair',
-                        ),
-                        Text(
-                          '14,209 members',
-                          style: titlesubtextstyle,
-                        ),
-                      ],
-                    ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(
+                        height: 3,
+                      ),
+                      Text(
+                        'Jakarta Fair',
+                        style: TextStyle(
+                            fontSize: 15, fontWeight: FontWeight.w500),
+                      ),
+                      Text(
+                        '14,209 members',
+                        style: TextStyle(fontWeight: FontWeight.w300,color: Colors.grey),
+                      ),
+                    ],
                   ),
                   Spacer(),
                   Image.asset(
