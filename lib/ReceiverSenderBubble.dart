@@ -49,5 +49,7 @@ class Bubble extends StatelessWidget {
         ),
       );
     }
+
+    return Scaffold();
   }
 }
