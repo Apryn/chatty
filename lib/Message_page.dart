@@ -5,6 +5,8 @@ import 'ReceiverSenderBubble.dart';
 class Message_page extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: Chat_input(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       backgroundColor: Color(0xffF8FAFC),
       body: SafeArea(
           child: Center(
@@ -62,10 +64,19 @@ class Message_page extends StatelessWidget {
                       text: 'How are ya guys?',
                       time: '2:30'),
                   Senderbubble(
+                    text:
+                        'Thinking about how to deal \nwith this client from hell... ',
+                    time: '22:08',
+                    Imageurl: 'assets/images/pic(4).png',
+                  ),
+                  receiverbubble(
+                      Imageurl: 'assets/images/pic(3).png',
+                      text: 'Find here :P',
+                      time: '21:30'),
+                  receiverbubble(
                       Imageurl: 'assets/images/pic(2).png',
-                      text:
-                          'Thinking about how to deal with this client from hell...',
-                      time: '22:08')
+                      text: 'Love them?',
+                      time: '22:30'),
                 ],
               ),
             ),
