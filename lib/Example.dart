@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '';
 
 class MessagePage extends StatelessWidget {
   @override
@@ -257,4 +256,4 @@ class MessagePage extends StatelessWidget {
       ),
     );
   }
-}
+} 

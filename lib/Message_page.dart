@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'theme.dart';
-import 'Chat_tile.dart';
+import 'ReceiverSenderBubble.dart';
 
 class Message_page extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xffF8FAFC),
       body: SafeArea(
           child: Center(
         child: Column(
           children: [
             Container(
+              margin: EdgeInsets.only(bottom: 30),
               width: double.infinity,
               height: 115,
               padding: EdgeInsets.all(30),
@@ -39,7 +41,8 @@ class Message_page extends StatelessWidget {
                       ),
                       Text(
                         '14,209 members',
-                        style: TextStyle(fontWeight: FontWeight.w300,color: Colors.grey),
+                        style: TextStyle(
+                            fontWeight: FontWeight.w300, color: Colors.grey),
                       ),
                     ],
                   ),
@@ -49,7 +52,23 @@ class Message_page extends StatelessWidget {
                   )
                 ],
               ),
-            )
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 30),
+              child: Column(
+                children: [
+                  receiverbubble(
+                      Imageurl: 'assets/images/pic(1).png',
+                      text: 'How are ya guys?',
+                      time: '2:30'),
+                  Senderbubble(
+                      Imageurl: 'assets/images/pic(2).png',
+                      text:
+                          'Thinking about how to deal with this client from hell...',
+                      time: '22:08')
+                ],
+              ),
+            ),
           ],
         ),
       )),
